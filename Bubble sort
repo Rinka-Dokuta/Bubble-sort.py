@@ -1,0 +1,13 @@
+Bubble = [5,2,10,3,8]
+
+#put a second for loop here that repeats the process 4 times
+for j in range(4):
+#put a for loop here so you check the next two slots and the next two, etc
+    for i in range(4):
+        if Bubble [i] > Bubble[i+1]: #if the next slot is less than last
+            temp = Bubble[i+1] #Put less value slot into temp variable
+            Bubble[i+1] = Bubble[i] #put greater value into last
+            Bubble[i] = temp #Bring back the less value slot into previous slot
+
+print(Bubble)
+
